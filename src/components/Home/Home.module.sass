@@ -1,0 +1,497 @@
+@import '../assets/styles/_mixin'
+@import ../assets/styles/_fonts.sass
+
+.banner
+    position: relative
+    margin-bottom: 40px
+    position: relative
+
+    &:before
+        // content: '',
+        // display: block
+        // background: url('/components/assets/images/sakura.png') no-repeat
+        // width: 504px
+        // height: 393px
+        // position: absolute
+        // bottom: -135px
+        // left: -360px
+.sakura_2
+    position: absolute
+    width: 847.76px
+    height: 661.2px
+    left: -402px
+    top: 2614.02px
+.sakura_3
+    position: absolute
+    width: 527.23px
+    height: 411.16px
+    left: 1000.77px
+    top: 5080.08px
+.textColor
+        color: #940986
+.comming
+    display: grid
+    grid-template-columns: 1fr 1fr
+    column-gap: 20px
+    color: #fff
+    margin-bottom: 40px
+    +r(930)
+        grid-template-columns: 1fr
+        margin-bottom: 130px
+
+    h2
+        font-family: Mulish
+        font-style: normal
+        font-weight: bold
+        font-size: 64px
+        text-align: left
+        line-height: 130%
+        margin-bottom: 30px
+        b
+            color: #FFF16D
+
+        +r(930)
+            text-align: center
+            font-size: 36px
+    p
+        font-family: Libre Franklin
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        text-align: left
+        line-height: 130%
+        margin-bottom: 20px
+
+        +r(930)
+            text-align: center
+            font-size: 16px
+
+    &__right
+        min-height: 273px
+
+        img
+            width: 100%
+            border-radius: 10px
+            margin-top: 20px
+    &__left
+.backgroundblue_1
+    position: absolute
+    width: 874.45px
+    height: 789.52px
+    left: 1092px
+    top: -606.9px
+    background: linear-gradient(276.38deg, rgba(95, 20, 170, 0.73) 3.24%, rgba(190, 74, 244, 0.4599) 34.79%, rgba(255, 241, 109, 0.5986) 60.93%, rgba(244, 74, 101, 0) 84.81%)
+    opacity: 0.4
+    filter: blur(40px)
+    transform: rotate(136.02deg)
+.backgroundblue_2
+    position: absolute
+    width: 293px
+    height: 323px
+    left: 1100px
+    top: 1291px
+    background: linear-gradient(277.94deg, rgba(161, 42, 234, 0.41) -17.43%, rgba(244, 74, 101, 0.082) 130.13%)
+    filter: blur(104px)
+.goals_contain
+    padding: 0
+    margin-bottom: 34px
+    @media (max-width: 900px)
+        display: none
+.goals
+    background: linear-gradient(99.52deg, rgba(244, 74, 101, 0.3) -2.65%, rgba(231, 137, 222, 0) 91.65%)
+    transform: rotate(-0.08deg)
+    width: 100%
+    padding: 0px !important
+    display: flex
+    column-gap: 20px    
+    color: #fff
+
+    h2
+        font-family: Mulish
+        font-style: normal
+        font-weight: bold
+        font-size: 64px
+        text-align: left
+        line-height: 130%
+        margin-bottom: 30px
+        b
+            color: #FFF16D
+
+        +r(930)
+            text-align: center
+            font-size: 36px
+    p
+        font-family: Libre Franklin
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        text-align: left
+        line-height: 130%
+        margin-bottom: 20px
+
+        +r(930)
+            text-align: center
+            font-size: 16px
+
+    &__right
+        min-height: 273px
+        @media (max-width: 930px)
+            display: none
+
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            object-position: right
+            border-radius: 10px
+    &__left
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 34px 0 34px 88px
+        @media (max-width: 930px)
+            padding: 34px
+
+p.comming__list
+    margin-bottom: 10px
+    font-size: 16px
+.title3
+    font-family: Mulish
+    font-style: normal
+    font-weight: bold
+    font-size: 60px
+    margin-bottom: 50px
+    margin-top: 50px
+    &__rotate
+        transform: rotate(12deg)
+        font-size: 55px
+        margin-left: 150px
+        @media (max-width: 890px)
+            transform: rotate(0deg)
+            margin-left: 50px
+    &__featuredrotate
+        transform: rotate(-12deg)
+        font-size: 55px
+        margin-left: 150px
+        @media (max-width: 890px)
+            transform: rotate(0deg)
+            margin-left: 50px
+    +r(930)
+        text-align: center
+        font-size: 28px
+.featuredimg
+    &__list
+        margin-bottom: 10px
+        margin-top: 80px
+        display: flex
+        transform: rotate(-12deg)
+        &__wrapper
+            position: relative
+            z-index: -1
+        @media (max-width: 890px)
+            transform: rotate(0deg)
+            flex-direction: column
+            padding: 25px
+    &__backset
+        position: absolute
+        width: 1046px
+        height: 452px
+        background: rgba(221, 221, 221, 0.12)
+        mix-blend-mode: normal
+        backdrop-filter: blur(116px)
+    &__publish
+        display: flex
+        flex-direction: column
+        justify-content: space-around    
+        @media (max-width: 900px)
+            display: none  
+    &__back_letterset
+        position: absolute
+        width: 721px
+        height: 392px
+        background: #1E031B
+        color: white
+        padding: 38px
+        text-align: left
+    &__underimg
+        margin-top: -100px
+    &__imgset
+        margin-left: 20px    
+        margin-bottom: 20px
+        +r(930)
+            text-align: center
+            font-size: 16px
+            grid-template-columns: 1fr
+            justify-items: center
+
+.heading
+    // position: relative
+    &__list
+        margin-bottom: 10px
+        margin-top: 80px
+        display: flex
+        transform: rotate(12deg)
+        @media (max-width: 890px)
+            transform: rotate(0deg)
+            flex-direction: column
+            padding: 25px
+    &__backset
+        position: absolute
+        width: 1046px
+        height: 452px
+        background: rgba(221, 221, 221, 0.12)
+        mix-blend-mode: normal
+        backdrop-filter: blur(116px)
+    &__publish
+        display: flex
+        flex-direction: column
+        justify-content: space-around    
+        @media (max-width: 900px)
+            display: none  
+    &__back_letterset
+        position: absolute
+        width: 721px
+        height: 392px
+        background: #1E031B
+        color: white
+        padding: 38px
+        text-align: left
+    &__underimg
+        margin-top: -100px
+    &__imgset
+        margin-left: 20px    
+        margin-bottom: 20px
+        +r(930)
+            text-align: center
+            font-size: 16px
+            grid-template-columns: 1fr
+            justify-items: center
+.visual_novel_div
+    position: absolute
+    width: 677px
+    height: 283px
+    right: 0px
+    top: 2380px
+    background: linear-gradient(99.52deg, rgba(244, 74, 101, 0.3) -2.65%, rgba(231, 137, 222, 0) 91.65%)
+    transform: translate(50%, 0%) rotate(162.34deg)
+    display: flex
+    justify-content: center
+    padding-top: 40px
+    @media (max-width: 900px)
+        display: none
+    &__content
+        font-size: 52px
+        line-height: 67.7px
+        font-weight: 700
+.visual_novel_div_mob
+    width: 677px
+    height: 600px
+    display: flex
+    justify-content: center
+    padding-top: 40px
+    background: linear-gradient(99.52deg, rgba(244, 74, 101, 0.3) -2.65%, rgba(231, 137, 222, 0) 91.65%)
+    @media (min-width: 900px)
+        display: none
+    &__content
+        font-size: 52px
+        line-height: 67.7px
+        font-weight: 700
+.featured
+    @media (max-width: 900px)
+        display: none
+    &__set
+        display: flex
+    &__list
+        margin-bottom: 40px
+        grid-template-columns: repeat(4,1fr)
+        &__wrapper
+            position: relative
+            z-index: -1
+        +r(930)
+            text-align: center
+            font-size: 16px
+            grid-template-columns: 1fr
+            justify-items: center
+    &__img 
+        margin-left: -160px
+        margin-top: -50px
+    &__right
+    &__left    
+div.visual_novel
+    background: linear-gradient(99.52deg, rgba(244, 74, 101, 0.3) -2.65%, rgba(231, 137, 222, 0) 91.65%)
+    height: 700px
+    padding: 77px 0
+    margin-bottom: 40px
+    h1
+        margin-bottom: 30px
+    img
+        // width: 100%
+        max-height: 400px
+
+.title
+    font-family: Mulish
+    font-style: normal
+    font-weight: bold
+    font-size: 52px
+    line-height: 130%
+    color: #1E031B
+
+.tokenomics
+    margin-bottom: 40px
+    position: relative
+
+    &__fone
+        position: absolute
+        object-fit: cover
+        top: -380px
+        left: -180px
+        bottom: 0
+        right: 0
+        z-index: -1
+    &__frame
+        background: linear-gradient(292.77deg, rgba(255, 206, 109, 0.73) 12.65%, rgba(113, 26, 145, 0.511) 44.52%, rgba(113, 26, 144, 0.259831) 73.65%, rgba(244, 74, 101, 0) 95.75%)
+        opacity: 0.6
+        filter: blur(57px)
+        transform: rotate(-73.24deg)
+        position: absolute
+        top: -20%
+        left: -20%
+        width: 150%
+        height: 150%
+        +r(930)
+            display: none
+    &__zsign
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 59%
+        right: 0
+        transform: translate(5%, -50%)
+        z-index: 100
+        margin-top: 3%
+        @media (max-width: 900px)
+            display: none
+.icons
+    display: grid
+    // margin-bottom: 40px
+    // justify-content: space-between
+    grid-template-columns: 1fr 1fr 1fr
+    +r(930)
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__item
+        padding: 54px 43px
+        +r(930)
+            margin-bottom: 30px
+        &_team
+            padding: 0
+
+            img
+                width: 242px
+                height: 242px
+
+        p
+            opacity: 0.8
+
+        span
+            font-family: Libre Franklin
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 150%
+            margin-bottom: 10px
+            display: inline-block
+    &__white
+        visibility: hidden
+.icon
+    margin-bottom: 45px
+    img
+        width: 235px
+        margin-bottom: 10px
+    &__red
+        margin-bottom: 15px
+        img
+            width: 235px
+
+.tokenomics__footer
+    display: flex
+    height: 119px
+    background: radial-gradient(157.84% 390.89% at -3.17% -25.21%, rgba(255, 255, 255, 0.3999) 0%, rgba(255, 255, 255, 0) 100%)
+    border-radius: 20px
+    align-items: center
+    justify-content: center
+    margin-bottom: 40px
+    +r(930)
+        flex-direction: column
+        height: auto
+        padding: 40px 34px
+    &_item
+        display: flex
+        flex-direction: column
+        margin-right: 60px
+        +r(930)
+            margin: 0
+            margin-bottom: 60px
+        &:last-of-type
+            margin-right: 0
+
+.footer_item
+    &__title
+        font-family: Libre Franklin
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 150%
+        margin-bottom: 5px
+
+    &__value
+        font-family: Libre Franklin
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 150%
+.team
+    margin-bottom: 40px
+.coinGecko__container
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    row-gap: 20px
+    column-gap: 20px
+    img
+        max-height: 60px
+        justify-self: center
+    +r(930)
+        grid-template-columns: repeat(2,1fr)
+        justify-items: center
+        img
+            max-width: 130px
+
+.overlay
+    position: relative
+    border-radius: 50%
+    .sacura_1
+        display: block
+        // width: 504px
+        // height: 393px
+        position: absolute
+        top: 0
+        left: 0
+        img
+            position: absolute
+            top: 102px
+            left: -355px
+            z-index: 2
+        svg
+            position: absolute
+            top: 0
+            left: -370px
+            z-index: 1
+    .sacura_2
+        display: block
+        position: absolute
+        top: 800px
+        right: -355px
+.mainImg
+    object-fit: cover
+    max-width: 100%

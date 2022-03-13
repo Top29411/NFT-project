@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0xe5fFeE8750C5f1463A865a0792Dd74E14397e91d",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x7ab02b432719e0c20c7159255c40a2d8c726ec03#writeContract",
+  "NETWORK": {
+    "NAME": "rinkeby",
+    "SYMBOL": "ETH",
+    "ID": 4
+  },
+  "NFT_NAME": "Yandere V3", 
+  "SYMBOL": "33", 
+  "MAX_SUPPLY": 1000, 
+  "WEI_COST": 75000000000000000, 
+  "DISPLAY_COST": 0.075, 
+  "GAS_LIMIT": 285000, 
+  "MARKETPLACE": "Opeansea", 
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/Yandere V3", 
+  "SHOW_BACKGROUND": true
+}

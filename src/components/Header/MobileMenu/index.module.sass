@@ -1,0 +1,45 @@
+@import ../../assets/styles/_mixin
+
+.btn
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    border: 1px solid #000
+    background: linear-gradient(100.83deg, rgba(255, 241, 109, 0.9) -31.46%, rgba(255, 241, 109, 0.567) 53.5%, rgba(170, 59, 88, 0) 156.3%), #F44A65
+    &:hover
+        cursor: pointer
+.wrapper
+    margin-left: 20px
+    align-self: center
+    position: relative
+    display: none
+    +r(1100)
+        display: block
+.menu__content
+    position: fixed
+    top: 80px
+    left: 0
+    bottom: 0
+    right: 0
+    background-color: #1E031B
+    display: none
+    z-index: 5
+    flex-direction: column
+    padding: 36px
+    nav
+        flex-direction: column
+        align-items: flex-end
+        margin-top: 30px
+        a
+            margin-bottom: 25px
+            margin-right: 0
+            font-size: 28px
+            line-height: 36px
+            font-weight: 600
+
+    &_active
+        display: flex
+        align-items: flex-end
+
+.white
+    background-color: #F4DEF2

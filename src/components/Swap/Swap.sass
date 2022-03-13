@@ -1,0 +1,67 @@
+@import ../assets/styles/_mixin
+
+.wrapper
+    margin-bottom: 50px
+    div.uni-ic__header-content-title
+        margin-bottom: 20px
+        font-family: Libre Franklin
+        font-style: normal
+        font-weight: 500
+        font-size: 18px
+        line-height: 150%
+        color: #fff
+        opacity: 1
+
+    div.uni-ic
+        width: 100%
+        max-width: 590px
+        padding: 31px 51px
+        background: rgba(55, 52, 55, 0.45)
+        border-radius: 50px
+        margin: 0 auto
+        +r(920)
+            padding: 20px 0
+            background: none
+            box-shadow: none
+
+    div.uni-ic__swap-input-container,div.uni-ic__swap-output-container
+        margin-bottom: 10px
+        background: none
+    div.uni-ic__swap-input-content.uni-ic__theme-panel, div.uni-ic__swap-output-content.uni-ic__theme-panel
+        background: linear-gradient(100.83deg, rgba(255, 241, 109, 0.6) -31.46%, rgba(242, 160, 63, 0.492) 24.13%, rgba(150, 61, 141, 0.228) 95.46%, rgba(170, 59, 88, 0) 158.4%)
+        border: none
+    input.uni-ic__swap-input-content-main-from.uni-ic__theme-panel,input.uni-ic__swap-output-content-main-from.uni-ic__theme-panel
+        background: transparent
+    input.uni-ic__swap-output-content.uni-ic__theme-panel
+        border: none
+    button.uni-ic__swap-input-content-main-from.uni-ic__theme-panel
+        background: transparent !important
+
+    button.uni-ic__swap-button.uni-ic__theme-background-button
+        background: linear-gradient(192.19deg, rgba(231, 137, 222, 0.8) 8.88%, rgba(255, 241, 109, 0.8) 197.74%) !important
+        color: #000 !important
+    div.uni-ic__swap-divider
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        margin-top: -25px
+        position: relative
+        border: none
+        &::after
+            content: ''
+            background: url('../assets/images/arrows.svg')
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+        svg
+            display: none
+
+    .uni-ic__swap-input-container
+        background: none
+        border: none
+
+    button.uni-ic__header-content-settings-button
+        svg
+            stroke: #fff

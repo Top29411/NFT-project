@@ -1,0 +1,41 @@
+@import ./components/assets/styles/_mixin
+
+.foneIconHeader
+  position: absolute
+  top: 0
+  right: 0
+  z-index: 1
+
+.App
+  overflow: hidden
+.bg
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: -1
+
+  .s1
+    position: absolute
+    bottom: 0
+  .s2
+    position: absolute
+    top: 0
+    right: 0
+  .c1
+    position: absolute
+    top: 0
+    left: 0
+    +r(1300)
+      left: -200px
+    +r(769)
+      display: none
+  .c2
+    position: absolute
+    top: 0
+    right: 0
+    +r(1300)
+      right: -400px
+    +r(769)
+      display: none

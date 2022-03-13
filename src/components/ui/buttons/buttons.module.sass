@@ -1,0 +1,34 @@
+.foneButton
+    width: 60px
+    display: flex
+    transform: rotate(180deg)
+    position: relative
+
+    svg
+        position: absolute
+        top: 50%
+        transform: translate(0,-50%) rotate(180deg)
+        z-index: 2
+        display: none
+
+svg.moon
+    left: 9px
+    &_active
+        display: block
+svg.sun
+    right: 9px
+    &_active
+        display: block
+
+.button
+    &__primary
+        background: #FFE600
+        border-radius: 30px
+        min-height: 38px
+        display: flex
+        align-items: center
+        justify-content: center
+        border: none
+        outline: none
+        cursor: pointer
+        text-decoration: none

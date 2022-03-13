@@ -1,0 +1,73 @@
+.modal
+    &__wrapper
+        min-width: 50%
+        min-height: 50%
+        position: absolute
+        top: -100%
+        left: 50%
+        transform: translate(-50%, -50%)
+        background-color: #fff
+        color: #000
+        animation: open 0.5s ease-in-out forwards
+        z-index: 100
+        text-align: center
+        overflow: auto
+        &_closed
+            animation: closed 0.5s ease-in-out
+    &__overlay
+        background-color: rgba(0, 0, 0, 0)
+        position: fixed
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        z-index: 100
+        animation: start 0.5s ease forwards
+        &_closed
+            animation: finish 0.5s ease
+.root
+    position: fixed
+    height: 100%
+    width: 100%
+    top: 0
+    left: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    overflow: auto
+.modalRoot
+    position: relative
+    z-index: 999
+    overflow: auto
+
+@keyframes open
+    0%
+        top: -100%
+        transform: translate(-50%,0)
+
+    100%
+        top: 50px
+        transform: translate(-50%, -0)
+
+@keyframes closed
+    0%
+        top: 50px
+        transform: translate(-50%,-0%)
+
+    100%
+        top: -100%
+        transform: translate(-50%, 0)
+@keyframes start
+    0%
+        background-color: rgba(0, 0, 0, 0)
+
+    100%
+        background-color: rgba(0, 0, 0, 0.5)
+
+@keyframes finish
+    0%
+        background-color: rgba(0, 0, 0, 0.5)
+
+    100%
+        background-color: rgba(0, 0, 0, 0)

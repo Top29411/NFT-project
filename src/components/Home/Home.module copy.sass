@@ -1,0 +1,249 @@
+@import '../assets/styles/_mixin'
+
+.banner
+    position: relative
+    margin-bottom: 40px
+    position: relative
+
+    &:before
+        // content: '',
+        // display: block
+        // background: url('/components/assets/images/sakura.png') no-repeat
+        // width: 504px
+        // height: 393px
+        // position: absolute
+        // bottom: -135px
+        // left: -360px
+
+.comming
+    display: grid
+    grid-template-columns: 1fr 1fr
+    column-gap: 20px
+    color: #fff
+    margin-bottom: 40px
+    +r(930)
+        grid-template-columns: 1fr
+        margin-bottom: 130px
+
+    h2
+        font-family: Mulish
+        font-style: normal
+        font-weight: bold
+        font-size: 64px
+        text-align: left
+        line-height: 130%
+        margin-bottom: 30px
+        b
+            color: #FFF16D
+
+        +r(930)
+            text-align: center
+            font-size: 36px
+    p
+        font-family: Libre Franklin
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        text-align: left
+        line-height: 130%
+        margin-bottom: 20px
+
+        +r(930)
+            text-align: center
+            font-size: 16px
+
+    &__right
+        min-height: 273px
+
+        img
+            width: 100%
+            border-radius: 10px
+            margin-top: 20px
+    &__left
+p.comming__list
+    margin-bottom: 10px
+    font-size: 16px
+.title3
+    font-family: Mulish
+    font-style: normal
+    font-weight: bold
+    font-size: 52px
+    margin-bottom: 50px
+    +r(930)
+        text-align: center
+        font-size: 28px
+
+.heading
+    &__list
+        margin-bottom: 40px
+        +r(930)
+            text-align: center
+            font-size: 16px
+            grid-template-columns: 1fr
+            justify-items: center
+.featured
+    &__list
+        margin-bottom: 40px
+        grid-template-columns: repeat(4,1fr)
+        +r(930)
+            text-align: center
+            font-size: 16px
+            grid-template-columns: 1fr
+            justify-items: center
+
+div.visual_novel
+    background: linear-gradient(99.52deg, rgba(244, 74, 101, 0.3) -2.65%, rgba(231, 137, 222, 0) 91.65%)
+    height: 700px
+    padding: 77px 0
+    margin-bottom: 40px
+    h1
+        margin-bottom: 30px
+    img
+        // width: 100%
+        max-height: 400px
+
+.title
+    font-family: Mulish
+    font-style: normal
+    font-weight: bold
+    font-size: 52px
+    line-height: 130%
+    color: #1E031B
+
+.tokenomics
+    margin-bottom: 40px
+    position: relative
+
+    &__fone
+        position: absolute
+        object-fit: cover
+        top: -380px
+        left: -180px
+        bottom: 0
+        right: 0
+        z-index: -1
+
+.icons
+    display: grid
+    // margin-bottom: 40px
+    // justify-content: space-between
+    grid-template-columns: 1fr 1fr 1fr
+    +r(930)
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__item
+        padding: 54px 43px
+        +r(930)
+            margin-bottom: 30px
+        &_team
+            padding: 0
+
+            img
+                width: 242px
+                height: 242px
+
+        p
+            opacity: 0.8
+
+        span
+            font-family: Libre Franklin
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 150%
+            margin-bottom: 10px
+            display: inline-block
+    &__white
+        visibility: hidden
+.icon
+    margin-bottom: 45px
+    img
+        width: 235px
+        margin-bottom: 10px
+    &__red
+        margin-bottom: 15px
+        img
+            width: 235px
+
+.tokenomics__footer
+    display: flex
+    height: 119px
+    background: radial-gradient(157.84% 390.89% at -3.17% -25.21%, rgba(255, 255, 255, 0.3999) 0%, rgba(255, 255, 255, 0) 100%)
+    border-radius: 20px
+    align-items: center
+    justify-content: center
+    margin-bottom: 40px
+    +r(930)
+        flex-direction: column
+        height: auto
+        padding: 40px 34px
+    &_item
+        display: flex
+        flex-direction: column
+        margin-right: 60px
+        +r(930)
+            margin: 0
+            margin-bottom: 60px
+        &:last-of-type
+            margin-right: 0
+
+.footer_item
+    &__title
+        font-family: Libre Franklin
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 150%
+        margin-bottom: 5px
+
+    &__value
+        font-family: Libre Franklin
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 150%
+.team
+    margin-bottom: 40px
+.coinGecko__container
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    row-gap: 20px
+    column-gap: 20px
+    img
+        max-height: 60px
+        justify-self: center
+    +r(930)
+        grid-template-columns: repeat(2,1fr)
+        justify-items: center
+        img
+            max-width: 130px
+
+.overlay
+    position: relative
+    border-radius: 50%
+    .sacura_1
+        display: block
+        // width: 504px
+        // height: 393px
+        position: absolute
+        top: 0
+        left: 0
+        img
+            position: absolute
+            top: 102px
+            left: -355px
+            z-index: 2
+        svg
+            position: absolute
+            top: 0
+            left: -370px
+            z-index: 1
+    .sacura_2
+        display: block
+        position: absolute
+        top: 800px
+        right: -355px
+.mainImg
+    object-fit: cover
+    max-width: 100%

@@ -1,0 +1,83 @@
+@import ../assets/styles/_mixin
+
+.wrapper
+    display: flex
+    flex-direction: column
+
+    +r(930)
+        padding: 0 50px
+
+.title
+    margin: 75px 0 129px
+    font-family: Mulish
+    font-style: normal
+    font-weight: bold
+    font-size: 64px
+    line-height: 130%
+    display: flex
+    align-self: center
+
+.step
+    &__wrapper
+        display: grid
+        grid-template-columns: 1fr 1fr
+        column-gap: 49px
+        margin-bottom: 100px
+        grid-auto-flow: dense
+        padding: 0 87px
+        +r(930)
+            padding: 0
+            grid-template-columns: 1fr
+            margin-bottom: 40px
+        &:nth-child(even)
+            .step__info
+                grid-column: 2
+                +r(930)
+                    grid-column: 1
+        h6
+            font-family: Libre Franklin
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 150%
+            margin-bottom: 5px
+            color: #BAB1B9
+            opacity: 0.7
+            text-transform: capitalize
+        h2
+            font-family: Mulish
+            font-style: normal
+            font-weight: 600
+            font-size: 36px
+            line-height: 130%
+            margin-bottom: 37px
+        li
+            font-family: Libre Franklin
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 150%
+            margin-bottom: 25px
+            list-style: none
+            &:last-of-type
+                margin-bottom: 0
+    &__image
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        max-width: 100%
+        +r(930)
+            margin-top: 51px
+        img
+            max-width: 100%
+
+.img1
+    height: 220px
+.img2
+    height: 170px
+.img4
+    margin-top: 40px
+
+.img5
+    border-radius: 90px

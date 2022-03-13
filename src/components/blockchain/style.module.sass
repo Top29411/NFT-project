@@ -1,0 +1,63 @@
+@import ../assets/styles/_mixin
+
+.modal
+    &__wrapper
+        background: linear-gradient(192.19deg, rgba(231, 137, 222, 1) 8.88%, rgba(255, 241, 109, 0.7) 197.74%)
+        padding: 24px
+        border-radius: 24px
+        box-shadow: rgb(0 0 0 / 70%) 0px 5px 11px 2px
+        width: 500px
+        min-width: unset
+
+.container
+    img
+        width: 200px
+
+h4
+    font-size: 28px
+    font-weight: 500
+    line-height: 1.6
+    margin-bottom: 25px
+
+.feedback
+    margin-bottom: 20px
+    font-size: 18px
+    font-weight: 500
+
+.actions
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 30px
+    span
+        margin: 0 30px
+        color: #000
+        font-size: 60px
+    button[type="button"]
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        border: none
+        background: linear-gradient(192.19deg, rgba(231, 137, 222, 0.5) 8.88%, rgba(255, 241, 109, 0.5) 197.74%)
+        font-size: 22px
+        border: 1px solid #fff
+
+// button[name="submit"]
+//     min-width: 50%
+//     height: 50px
+//     border-radius: 5px
+//     border: none
+//     background: linear-gradient(283.85deg, rgba(244, 74, 101, 0.42) 18.87%, rgba(255, 241, 109, 0) 122.05%)
+
+//     font-size: 20px
+
+//     &:hover
+//         cursor: pointer
+
+.button
+    width: 150px
+    +r(930)
+        width: 120px
+        height: 38px
+        align-self: center
+        margin-left: auto

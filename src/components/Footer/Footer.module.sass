@@ -1,0 +1,70 @@
+@import ../assets/styles/_mixin
+
+.footer
+    max-width: 1200px
+    margin: 0 auto
+    display: grid
+    grid-template-rows: 1fr 1fr 1fr
+    grid-template-columns: repeat(4,1fr)
+    row-gap: 20px
+    +r(930)
+        grid-auto-rows: max-content
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: auto
+    a
+        text-decoration: none
+        margin-right: 25px
+        font-family: Mulish
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 23px
+        +r(930)
+            font-size: 16px
+            line-height: 20px
+            margin-bottom: 15px
+    &__nav
+        display: flex
+        justify-self: center
+        align-items: center
+        grid-column: 2/4
+        +r(930)
+            grid-column: 1/2
+            flex-direction: column
+            grid-row: 3
+            align-items: flex-start
+            width: 100%
+
+    &__social
+        width: auto
+        +r(930)
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            a
+                margin-bottom: 30px
+                margin-right: 0
+
+    p
+        font-family: Mulish
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 150%
+        +r(930)
+            grid-row: 2
+            grid-column: 1/2
+
+.fone_button
+    grid-column: 4/5
+    align-self: start
+    justify-self: end
+    +r(930)
+        grid-column: 2/3
+        grid-row: 1
+.logo
+    grid-column: 1/1
+
+small
+    +r(930)
+        grid-row: 4

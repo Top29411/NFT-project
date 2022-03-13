@@ -1,0 +1,39 @@
+@import ../assets/styles/_variables
+@import ../assets/styles/_mixin
+
+.layout
+    background: $bgDark
+    min-height: 100vh
+    padding: 0 20px
+    position: relative
+    z-index: 1
+
+    +r(930)
+        padding: 0 20px
+
+    &_white
+        background: $bgWhite
+
+.main
+    background: rgba(55, 52, 55, 0.45)
+    min-height: 100vh
+    max-width: 1200px
+    margin: 0 auto
+    border-radius: 50px
+    box-sizing: border-box
+    position: relative
+    padding-bottom: 75px
+    margin-bottom: 170px
+    &_active
+        background: rgba(255, 255, 255, 0.45)
+.overflow
+    overflow: hidden
+    border-radius: 50px
+
+.container
+    padding: 0 8.7%
+    box-sizing: border-box
+    text-align: center
+
+    +r(930)
+        padding: 0

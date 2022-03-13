@@ -1,0 +1,43 @@
+// @import ../../../assets/styles/_variables
+
+$switchWidth: 60px
+$btnSize: 20px
+$padding: 4px
+
+.switcher
+    display: none
+    &__label
+        position: relative
+        box-sizing: border-box
+        width: $switchWidth
+        height: 29px
+        padding: $padding
+        box-shadow: 0px 4px 24px rgba(99, 101, 109, 0.08) inset
+        border-radius: 16px
+        background: linear-gradient(to right,#FFE600 50%,#000 100%) 0 0
+        background-size: (($switchWidth * 2) + 500px)
+        transition: .3s ease
+        &:hover
+            cursor: pointer
+
+        &::before
+            content: ""
+            width: $btnSize
+            height: $btnSize
+            position: absolute
+            top: 5px
+            left: 5px
+            background-color: #000
+            border-radius: 50%
+            box-shadow: 0px 4px 24px rgba(99, 101, 109, 0.08)
+            transition: left .3s ease, transform .1s ease
+        &:active
+            &::before
+                transform: scale(0.9)
+    &:checked
+        & +.switcher__label
+            background-position-x: -($switchWidth - 120px)
+            &::before
+                content: ""
+                left: ($switchWidth - $btnSize - $padding)
+                background-color: #fff

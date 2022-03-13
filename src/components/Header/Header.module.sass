@@ -1,0 +1,68 @@
+@import ../assets/styles/_mixin
+
+.header
+    padding: 15px 0
+    max-width: 1200px
+    margin: 0 auto
+    display: flex
+    margin-bottom: 40px
+    display: flex
+    align-items: center
+    // +r(1100)
+    //     display: none
+
+.logo
+    text-decoration: none
+    display: flex
+    align-items: center
+    &__wrapper
+        margin-right: 23px
+
+    img
+        width: 82px
+        height: 82px
+        margin-right: 20px
+    p
+        font-family: Mulish
+        font-style: normal
+        font-weight: 600
+        font-size: 22px
+        line-height: 23px
+        text-align: start
+        display: inline-block
+
+.nav
+    min-width: 50%
+
+    display: flex
+    align-items: center
+    justify-content: center
+
+    a
+        font-family: Mulish
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 23px
+        color: #fff
+        text-decoration: none
+        list-style: none
+        margin-right: 25px
+
+        &:last-of-type
+            margin-right: 0
+
+.social
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    margin-left: auto
+    a
+        margin-right: 25px
+
+.mobile
+    +r(1100)
+        display: none !important
+.chain
+    +r(1100)
+        margin-left: auto
